@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 2;
   color: #222;
   background: #f8f8f8;
@@ -38,7 +38,7 @@ a:focus {
   text-decoration: none;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
   margin-bottom: 15px;
 }
@@ -137,7 +137,7 @@ h2.title a {
   margin-bottom: 5px;
   color: rgba(255,255,255,0.5);
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.05em;
 }
 .lx-navigation .lx-cover .copy .display-tc div h3 {
@@ -216,7 +216,7 @@ h2.title a {
 #lx-aside .page-title > span {
   display: block;
   color: rgba(255,255,255,0.8);
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.05em;
   margin-bottom: 0;
 }
@@ -825,7 +825,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #4d4d4c;
   background: #f7f7f7;
   line-height: 2;
@@ -837,7 +837,7 @@ code {
   color: #fc5185;
   background: #eee;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 16px;
 }
 pre {
   padding: 10px;
@@ -1134,7 +1134,7 @@ blockquote {
 .post-button a.btn {
   display: inline-block;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   background: #58be8e;
   border: none;
@@ -1150,7 +1150,7 @@ blockquote {
 a.btn {
   display: inline-block;
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   border: 2px solid #555;
   text-decoration: none;
