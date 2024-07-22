@@ -13,7 +13,7 @@
   
   <title>
     
-      Monthly Summary 06 (June, 2024) 
+      archive_a: 2024/7 
       
       
       |
@@ -120,200 +120,95 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
 
+<!-- last: 按年份把文章分组，当前遍历到的年份 -->
+<!-- now: 当前遍历到的文章的发布年份 -->
 
-  <!-- LaTex Display -->
-
-  
-    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
-  
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    }
-  </script>
-
-
-
-
-
-  <!-- clipboard -->
-
-  
-    <script async type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
-  
-  
-<script src="/js/codeCopy.js"></script>
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">Monthly Summary 06 (June, 2024)</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
-          2024-07-22 10:08:11
-        </span>
-        
-              <span class="post-tags">
-                <i class="iconfont icon-tags mr-10" title="Tags"></i>
-                
-                <span class="span--tag mr-8">
-                  <a href="/tags/2024/" title="2024">
-                    #2024
-                  </a>
-                </span>
-                
-                <span class="span--tag mr-8">
-                  <a href="/tags/monthly-summary/" title="monthly-summary">
-                    #monthly-summary
-                  </a>
-                </span>
-                
-                <span class="span--tag mr-8">
-                  <a href="/tags/June/" title="June">
-                    #June
-                  </a>
-                </span>
-                
-              </span>
-          
-      </div>
-      <div class="markdown-body">
-        <p><em>The summary of the June, 2024.</em></p>
-<span id="more"></span>
-
-
-<h2 id="📖-Academy"><a href="#📖-Academy" class="headerlink" title="📖 Academy"></a><font face="Rubik">📖 Academy</font></h2><p>I focused on my work for 127 h 41 min this month</p>
-<h2 id="✨-Thoughts"><a href="#✨-Thoughts" class="headerlink" title="✨ Thoughts"></a><font face="Rubik">✨ Thoughts</font></h2><p>In the first half of June, I worked pretty hard, with the average daily studying hour of more than 8 hours. And soon I was burnt out. The large amount of work with substantial difficulty can not be comparable with my ability. At the moment, all tips became useless. Maybe I just need a holiday, which is not possible. In this place and other places in Asia, people and society don’t value relaxation, they believe in non-stop hard work. But I do think a balance between work and life is necessary for a productive academical journey, at least it’s essential for me.</p>
-<p>So I rest on one whole weekday. I didn’t go anywhere doing meaningful things, I just scrolling my phone, getting funny tiny information fragments which are basically useless. But I get relief somehow, and with a subsequent enough sleep, I feel better.</p>
-<p>It suddenly occurred to me that all my anxiety washing off my motivation is not that necessary. Of course I want to make perfect research and publish it on an advanced journal. But the most important thing is get published first to meet the requirement of graduation. A large part of my anxiety is no publication. </p>
-<p>So perfection is the least thing I would persue at the moment. And it might still be later. The reason is that the research published on top journals are based on the efforts from multiple people and groups. I am alone. I find the scientific question, I search for possible methods, I plan for the whole workflow, I write every word of this manuscript, I then modify it again and again. How can I expect it to be comparable to other papers I have read?</p>
-<p>And that’s also the reason I shouldn’t compare my “slow” progress with that of others. I think I’m doing pretty well given all the conditions I got, which is literally zero. I wasn’t that lucky to meet a qualified mentor, I need to learn and plan everything on my own. It’s so hard. I don’t have to make it even harder by blaming and pushing myself.</p>
-<p>I always have the freedom to produce the worst garbage in the world!</p>
-
-      </div>
-      
-        <div class="prev-or-next">
-          <div class="post-foot-next">
-            
-              <a href="/2024/05/14/May/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>Prev</span>
-              </a>
-            
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime mr-10" title="Update time"></i>
-              2024-07-22 10:08:11
-            </span>
-            
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags mr-10" title="Tags"></i>
-                    
-                    <span class="span--tag mr-8">
-                      <a href="/tags/2024/" title="2024">
-                        #2024
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag mr-8">
-                      <a href="/tags/monthly-summary/" title="monthly-summary">
-                        #monthly-summary
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag mr-8">
-                      <a href="/tags/June/" title="June">
-                        #June
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-              <a href="/2024/07/22/July/" target="_self">
-                <span>Next</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
-            
-          </div>
+<div class="container archives">
+  <div class="post-list">
+    
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2024</span>
+          </h2>
         </div>
       
-    </div>
+      <div class="post-item" title="Monthly Summary 07 (July, 2024)">
+        <div class="time-m-d">07-22</div>
+        <div class="title">
+          <a href="/2024/07/22/July/">
+            <span>Monthly Summary 07 (July, 2024)</span>
+          </a>
+        </div>
+      </div>
     
-  <div id="btn-catalog" class="btn-catalog">
-    <i class="iconfont icon-catalog"></i>
-  </div>
-  <div class="post-catalog hidden" id="catalog">
-    <div class="title">Contents</div>
-    <div class="catalog-content">
-      
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%96-Academy"><span class="toc-text">📖 Academy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%A8-Thoughts"><span class="toc-text">✨ Thoughts</span></a></li></ol>
-      
-    </div>
-  </div>
-
-  
-<script src="/js/catalog.js"></script>
-
-
-
-
+      <div class="post-item" title="Monthly Summary 06 (June, 2024)">
+        <div class="time-m-d">06-19</div>
+        <div class="title">
+          <a href="/2024/06/19/June/">
+            <span>Monthly Summary 06 (June, 2024)</span>
+          </a>
+        </div>
+      </div>
     
-      <div class="comments-container">
-        
-
-
-  <div id="disqus_thread"></div>
-  <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-70iscoolest-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
-
-
-
+      <div class="post-item" title="Monthly Summary 05 (May, 2024)">
+        <div class="time-m-d">05-14</div>
+        <div class="title">
+          <a href="/2024/05/14/May/">
+            <span>Monthly Summary 05 (May, 2024)</span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="Monthly summary 04 (April, 2024)">
+        <div class="time-m-d">04-19</div>
+        <div class="title">
+          <a href="/2024/04/19/April/">
+            <span>Monthly summary 04 (April, 2024)</span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="Monthly summary 03 (March, 2024)">
+        <div class="time-m-d">03-06</div>
+        <div class="title">
+          <a href="/2024/03/06/March/">
+            <span>Monthly summary 03 (March, 2024)</span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="Monthly summary 02 (February, 2024)">
+        <div class="time-m-d">02-26</div>
+        <div class="title">
+          <a href="/2024/02/26/Feb/">
+            <span>Monthly summary 02 (February, 2024)</span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="How to contruct and save all my PhD notes in a system">
+        <div class="time-m-d">01-18</div>
+        <div class="title">
+          <a href="/2024/01/18/my-PhD-note-system/">
+            <span>How to contruct and save all my PhD notes in a system</span>
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="Weekly summary 01 (2024_Jan_Week2_0108-0114)">
+        <div class="time-m-d">01-11</div>
+        <div class="title">
+          <a href="/2024/01/11/Jan-Week2/">
+            <span>Weekly summary 01 (2024_Jan_Week2_0108-0114)</span>
+          </a>
+        </div>
       </div>
     
   </div>
-
+</div>
 
         
 <div class="footer">
@@ -599,24 +494,6 @@
 
 
         
-  
-    <div class="share-icon tools-bar-item">
-      <a href="javascript: void(0)" id="share-icon">
-        <i class="iconfont iconshare"></i>
-      </a>
-      <div class="share-content hidden">
-        
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Monthly%20Summary%2006%20(June%2C%202024) + '&url=' + https%3A%2F%2F70iscoolest.github.io%2F2024%2F06%2F19%2FJune%2F + '" target="_blank" title="Twitter">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        
-        
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://70iscoolest.github.io/2024/06/19/June/" target="_blank" title="Facebook">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        
-      </div>
-    </div>
   
   
 <script src="/js/shares.js"></script>
